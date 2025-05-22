@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, Float, ForeignKey, DateTime, UniqueConstraint,BigInteger,Numeric,Boolean,String
 from sqlalchemy.orm import relationship
-from app.db.base import Base
+from app.db.models.base import Base
 
 class CandleData(Base):
     __tablename__ = "ohlcv_data"

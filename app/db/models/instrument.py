@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String,Boolean, ForeignKey, DateTime, Numeric, BigInteger, JSON, UniqueConstraint
-from app.db.base import Base
+from app.db.models.base import Base
 from sqlalchemy.dialects.postgresql import JSONB
 class Instrument(Base):
     __tablename__ = "instruments"

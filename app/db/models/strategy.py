@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Text, DateTime,Boolean,JSON
-from app.db.base import Base
+from app.db.models.base import Base
 from sqlalchemy.dialects.postgresql import JSONB
 from datetime import datetime
 

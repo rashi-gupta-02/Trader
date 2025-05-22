@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, DateTime, Text,ForeignKey,Numeric,JSON
 from sqlalchemy.dialects.postgresql import JSONB
 from datetime import datetime
-from app.db.base import Base
+from .base import Base
 
 class BacktestingLog(Base):
     __tablename__ = "backtesting_logs"
