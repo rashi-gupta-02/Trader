@@ -1,14 +1,18 @@
 # Trader
 1. Create a .env file with database connection details:
 
-   DATABASE_URL=sqlite:///./trader.db
+SQLALCHEMY_WARN_20=0
 
-   API_HOST=localhost
+SQLALCHEMY_SILENCE_UBER_WARNING=1
 
-   API_PORT=8000
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/trader_api
 
-   SECRET_KEY=your-super-secret-key-change-this-in-production
+API_HOST=localhost
 
-   DEFAULT_TIMEFRAME=1h
+API_PORT=8000
 
-   MAX_POSITIONS=10
+SECRET_KEY=your-super-secret-key-change-this-in-production
+
+DEFAULT_TIMEFRAME=1h
+
+MAX_POSITIONS=10
