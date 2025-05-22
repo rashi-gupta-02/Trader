@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Database URL from environment or default to SQLite
-DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./trader.db")
+DATABASE_URL = os.getenv("DATABASE_URL","postgresql://postgres:postgres@localhost:5432/trader_api")
 
 # Create SQLAlchemy engine
 engine = create_engine(
