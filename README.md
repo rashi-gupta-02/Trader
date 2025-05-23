@@ -5,7 +5,7 @@ SQLALCHEMY_WARN_20=0
 
 SQLALCHEMY_SILENCE_UBER_WARNING=1
 
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/trader_api
+DATABASE_URL=postgresql://postgres:<your_actual_password>@localhost:5432/trader_api
 
 API_HOST=localhost
 
@@ -16,3 +16,4 @@ SECRET_KEY=your-super-secret-key-change-this-in-production
 DEFAULT_TIMEFRAME=1h
 
 MAX_POSITIONS=10
+
